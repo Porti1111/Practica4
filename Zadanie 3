@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  // Создаем массив для 15 шаров разных цветов
+  int colorful_balls[15];
+
+  // Создаем переменную size в котором делится общий размер массива в байтах на размер 1 элемента в массиве
+  int size = sizeof(colorful_balls) / sizeof(colorful_balls[0]);
+
+  //Выводим результат
+  printf("В коробке colorful_balls помещается %d шариков.\n", size);
+  return 0;
+}
